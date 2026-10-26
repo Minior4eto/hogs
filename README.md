@@ -1,13 +1,30 @@
 # hogs
 
-**Find what's hogging your disk.** A fast disk usage TUI for Linux, written in Rust, built to be riced.
+**Find what's hogging your disk.** `hogs` is a terminal app that shows which folders and files are eating your space, sorted by size, with a bar for each one. It's written in Rust, runs anywhere a terminal does, and is built to be riced: every color, border and bar is a theme you can edit live.
 
-- Sorted tree with usage bars, drill in and out with vim keys
-- Disk usage *and* apparent size, hard links counted once, symlinks never followed
-- Filesystem gauge in the header, live progress while scanning
-- Delete safely: `d` moves to the trash, and always asks first
-- Themes are plain TOML: colors, borders, bar glyphs, gradients, selector, transparency
-- Edit your theme while hogs is open and it reloads live
+![hogs in five themes](docs/hogs-themes.png)
+
+## Why hogs
+
+- **Very lightweight.** One small binary, about 1.7 MB. It has no daemon, no config it needs, and no background process. On a sample scan of `/usr` (about 160,000 files) it finished in around 2 seconds using roughly 36 MB of RAM. Those numbers are from one test machine, so your results will vary.
+- **Fast to read.** A sorted tree with usage bars, drill in and out with vim keys, and a filesystem gauge in the header so you see the whole picture at a glance.
+- **Accurate.** Shows disk usage *and* apparent size, counts hard links once, and never follows symlinks, so totals don't lie.
+- **Safe.** `d` moves things to the trash, never deletes outright, and always asks first.
+- **Riceable.** Themes are plain TOML files: colors, border style, bar glyphs, gradients, selector, and transparency so your blur shows through. Edit a theme while hogs is open and it reloads on save.
+
+## Themes
+
+Five themes ship with hogs. Press `t` in the app to cycle through them.
+
+| Theme | Look |
+|---|---|
+| `gruvbox` (default) | Warm retro, high contrast |
+| `catppuccin-mocha` | Soft pastels on deep base |
+| `tokyo-night` | Neon on midnight blue, thin bars |
+| `nord` | Arctic and calm, ASCII bars |
+| `rose-pine` | Muted and dreamy, dotted bars |
+
+Pick one with `hogs -t tokyo-night`, or start from any of them with `hogs --dump-theme nord > ~/.config/hogs/themes/mine.toml`. The full theme reference is further down.
 
 ## Install
 
