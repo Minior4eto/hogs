@@ -1,0 +1,25 @@
+[package]
+name = "hogs"
+version = "0.1.0"
+edition = "2021"
+description = "Find what's hogging your disk: a fast, riceable disk usage TUI"
+license = "MIT"
+readme = "README.md"
+keywords = ["disk", "du", "tui", "ncdu", "terminal"]
+categories = ["command-line-utilities", "filesystem"]
+
+[dependencies]
+ratatui = "0.29"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+trash = "5"
+libc = "0.2"
+anyhow = "1"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+strip = true
+lto = true

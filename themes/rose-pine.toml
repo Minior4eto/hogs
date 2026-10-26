@@ -1,0 +1,26 @@
+# Rosé Pine: muted, dreamy, all natural pine.
+
+[colors]
+background   = "#191724"
+foreground   = "#e0def4"
+dim          = "#6e6a86"
+accent       = "#ebbcba"
+title        = "#ebbcba"
+border       = "#403d52"
+directory    = "#9ccfd8"
+file         = "#e0def4"
+symlink      = "#c4a7e7"
+selection_bg = "#26233a"
+selection_fg = "#e0def4"
+danger       = "#eb6f92"
+warning      = "#f6c177"
+bar_low      = "#31748f"
+bar_high     = "#eb6f92"
+bar_empty    = "#26233a"
+
+[style]
+border    = "double"
+bar       = "dots"
+gradient  = "position"
+bar_width = 20
+selector  = "✿ "

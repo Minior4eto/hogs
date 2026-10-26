@@ -1,0 +1,26 @@
+# Catppuccin Mocha: soft pastels on a deep base.
+
+[colors]
+background   = "#1e1e2e"
+foreground   = "#cdd6f4"
+dim          = "#6c7086"
+accent       = "#cba6f7"
+title        = "#cba6f7"
+border       = "#45475a"
+directory    = "#89b4fa"
+file         = "#cdd6f4"
+symlink      = "#94e2d5"
+selection_bg = "#313244"
+selection_fg = "#f5e0dc"
+danger       = "#f38ba8"
+warning      = "#f9e2af"
+bar_low      = "#a6e3a1"
+bar_high     = "#f38ba8"
+bar_empty    = "#313244"
+
+[style]
+border    = "rounded"
+bar       = "blocks"
+gradient  = "position"
+bar_width = 22
+selector  = "❯ "

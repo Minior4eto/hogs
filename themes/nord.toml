@@ -1,0 +1,26 @@
+# Nord: arctic, calm, minimal.
+
+[colors]
+background   = "#2e3440"
+foreground   = "#d8dee9"
+dim          = "#616e88"
+accent       = "#88c0d0"
+title        = "#88c0d0"
+border       = "#4c566a"
+directory    = "#81a1c1"
+file         = "#d8dee9"
+symlink      = "#8fbcbb"
+selection_bg = "#3b4252"
+selection_fg = "#eceff4"
+danger       = "#bf616a"
+warning      = "#ebcb8b"
+bar_low      = "#a3be8c"
+bar_high     = "#bf616a"
+bar_empty    = "#3b4252"
+
+[style]
+border    = "plain"
+bar       = "ascii"
+gradient  = "size"
+bar_width = 18
+selector  = "> "

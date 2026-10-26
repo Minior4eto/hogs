@@ -1,0 +1,28 @@
+# Gruvbox dark: warm, retro, high contrast.
+
+[colors]
+background   = "#282828"
+foreground   = "#ebdbb2"
+dim          = "#928374"
+accent       = "#fe8019"
+title        = "#fabd2f"
+border       = "#504945"
+directory    = "#83a598"
+file         = "#ebdbb2"
+symlink      = "#8ec07c"
+selection_bg = "#3c3836"
+selection_fg = "#fbf1c7"
+danger       = "#fb4934"
+warning      = "#fabd2f"
+bar_low      = "#b8bb26"
+bar_high     = "#fb4934"
+bar_empty    = "#3c3836"
+
+[style]
+border    = "rounded"   # rounded | plain | double | thick | none
+bar       = "blocks"    # blocks | thin | ascii | dots
+gradient  = "size"      # size: one color per bar | position: fade along the bar
+bar_width = 20
+transparent = false     # true = use the terminal's background (blur/opacity shows through)
+icons     = false       # true needs a Nerd Font
+selector  = "▌ "

@@ -1,0 +1,26 @@
+# Tokyo Night: neon on midnight blue.
+
+[colors]
+background   = "#1a1b26"
+foreground   = "#c0caf5"
+dim          = "#565f89"
+accent       = "#7aa2f7"
+title        = "#bb9af7"
+border       = "#3b4261"
+directory    = "#7aa2f7"
+file         = "#c0caf5"
+symlink      = "#7dcfff"
+selection_bg = "#283457"
+selection_fg = "#c0caf5"
+danger       = "#f7768e"
+warning      = "#e0af68"
+bar_low      = "#7dcfff"
+bar_high     = "#bb9af7"
+bar_empty    = "#292e42"
+
+[style]
+border    = "thick"
+bar       = "thin"
+gradient  = "position"
+bar_width = 24
+selector  = "▶ "
